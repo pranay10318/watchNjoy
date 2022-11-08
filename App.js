@@ -9,6 +9,7 @@ import {
 import Home from "./screens/Home";
 import Profile from "./screens/Profile";
 import Cameraa from "./screens/Cameraa";
+import Reels from "./screens/Reels";
 const tab = createBottomTabNavigator();
 
 export default function App() {
@@ -40,7 +41,7 @@ export default function App() {
         />
         <tab.Screen
           name="reels"
-          component={Profile}
+          component={Reels}
           options={{
             tabBarIcon: ({ focused }) => {
               <Image
@@ -54,7 +55,7 @@ export default function App() {
           }}
         />
         <tab.Screen
-          name="create_vrideo"
+          name="create_video"
           component={Cameraa}
           options={{
             tabBarIcon: ({ focused }) => {
